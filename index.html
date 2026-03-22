@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Quiz App</h1>
+
+  <section>
+    <h2>Lisa uus küsimus</h2>
+    <form id="questionForm">
+      <input type="text" id="question" placeholder="Sisesta küsimus" required />
+      <input type="text" id="optionA" placeholder="Vastus A" required />
+      <input type="text" id="optionB" placeholder="Vastus B" required />
+      <input type="text" id="optionC" placeholder="Vastus C" required />
+      <input type="text" id="optionD" placeholder="Vastus D" required />
+
+      <select id="correctAnswer" required>
+        <option value="">Vali õige vastus</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+      </select>
+
+      <button type="submit">Lisa küsimus</button>
+    </form>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Kõik küsimused</h2>
+    <div id="questionsList"></div>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Quiz</h2>
+    <button id="startQuizBtn">Alusta quizi</button>
+    <div id="quizContainer"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
