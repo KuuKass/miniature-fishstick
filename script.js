@@ -1,4 +1,4 @@
-const API_URL = "https://tinkr.tech/sdb/moon_cat_space/quizplace";
+const API_URL = "https:tinkr.tech/sdb/moon_cat_space/quizplace";
 
 const questionForm = document.getElementById("questionForm");
 const questionsList = document.getElementById("questionsList");
@@ -99,11 +99,13 @@ function showQuestion() {
   const q = allQuestions[currentQuestionIndex];
 
   quizContainer.innerHTML = `
-    <h3>${q.question}</h3>
-    <button class="answer-btn" onclick="checkAnswer('A')">${q.optionA}</button>
-    <button class="answer-btn" onclick="checkAnswer('B')">${q.optionB}</button>
-    <button class="answer-btn" onclick="checkAnswer('C')">${q.optionC}</button>
-    <button class="answer-btn" onclick="checkAnswer('D')">${q.optionD}</button>
+    <div>
+      <h3>${q.question}</h3>
+      <button class="answer-btn" onclick="checkAnswer('A')">${q.optionA}</button>
+      <button class="answer-btn" onclick="checkAnswer('B')">${q.optionB}</button>
+      <button class="answer-btn" onclick="checkAnswer('C')">${q.optionC}</button>
+      <button class="answer-btn" onclick="checkAnswer('D')">${q.optionD}</button>
+    </div>
   `;
 }
 
