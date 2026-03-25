@@ -92,19 +92,19 @@ startQuizBtn.addEventListener("click", () => {
 
 function showQuestion() {
   if (currentQuestionIndex >= allQuestions.length) {
-    quizContainer.innerHTML = <h3>Quiz läbi!</h3><p>Skoor: ${score} / ${allQuestions.length}</p>;
+    quizContainer.innerHTML = `<h3>Quiz läbi!</h3><p>Skoor: ${score} / ${allQuestions.length}</p>`;
     return;
   }
 
   const q = allQuestions[currentQuestionIndex];
 
-  quizContainer.innerHTML = 
+  quizContainer.innerHTML = `
     <h3>${q.question}</h3>
     <button class="answer-btn" onclick="checkAnswer('A')">${q.optionA}</button>
     <button class="answer-btn" onclick="checkAnswer('B')">${q.optionB}</button>
     <button class="answer-btn" onclick="checkAnswer('C')">${q.optionC}</button>
     <button class="answer-btn" onclick="checkAnswer('D')">${q.optionD}</button>
-  ;
+  `;
 }
 
 function checkAnswer(selected) {
