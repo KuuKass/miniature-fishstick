@@ -1,4 +1,4 @@
-const API_URL = "https//:tinkr.tech/sdb/moon_cat_space/quizplace";
+const API_URL = "https://tinkr.tech/sdb/moon_cat_space/quizplace";
 
 const questionForm = document.getElementById("questionForm");
 const questionsList = document.getElementById("questionsList");
